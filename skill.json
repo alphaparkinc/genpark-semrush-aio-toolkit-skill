@@ -1,0 +1,36 @@
+{
+  "name": "genpark-semrush-aio-toolkit-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Optimize keywords and semantic layouts to adapt pages for AI Overviews (AIO).",
+  "author": "genpark",
+  "category": "marketing",
+  "tags": [
+    "semrush",
+    "aio",
+    "keywords",
+    "seo",
+    "overviews"
+  ],
+  "inputs": {
+    "target_keywords": {
+      "type": "array",
+      "description": "Core keywords: [string]."
+    },
+    "page_copy": {
+      "type": "string",
+      "description": "Existing text copy."
+    }
+  },
+  "outputs": {
+    "optimized_copy": {
+      "type": "string",
+      "description": "Semantic copy tailored for Google AIO."
+    },
+    "semrush_keyword_overlap_score": {
+      "type": "number",
+      "description": "Semantic relevance score (0.0 to 1.0)."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
